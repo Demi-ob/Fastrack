@@ -7,32 +7,35 @@ import { Box } from "@mui/material";
 import { motion } from "framer-motion";
 
 interface FAQItem {
-  id:number;
+  id: number;
   question: string;
   answer: string;
 }
 
 const faqData: FAQItem[] = [
   {
-    id:1,
-    question: "What is Lorem Ipsum?",
+    id: 1,
+    question: "What is the Vehicle Tracking system offered by Fastrack?",
     answer:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      " Fastrack provides a high-tech Fleet Management Solution that offers automatic periodic reports to the web. This includes detailed reports on vehicle function, overspeed alerts, idle time reports, trip start information, and more.",
   },
-  { id:2,
-    question: "Why do we use it?",
+  {
+    id: 2,
+    question: "How does Fastrack conduct security audits for information systems?",
     answer:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "We systematically evaluate the security of your company's information system by measuring how well it conforms to a set of established criteria. Our rigorous audits help identify vulnerabilities and strengthen your cybersecurity.",
   },
-  { id:3,
-    question: "Where does it come from?",
+  {
+    id: 3,
+    question: " Does Fastrack offer customized security solutions for different industries?",
     answer:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+      "Yes, Fastrack understands that security needs vary across industries. We offer customized security solutions to address the unique requirements of different sectors, ensuring comprehensive protection.",
   },
-  { id:4,
-    question: "Is it safe to use Lorem Ipsum?",
+  {
+    id: 4,
+    question: "How can I inquire about Fastrack's services for my specific needs?",
     answer:
-      "Yes, Lorem Ipsum is safe to use. It has been the industry's standard dummy text ever since the 1500s.",
+      "Feel free to reach out to our dedicated team through the contact information provided on our website. We are here to discuss your specific security requirements and tailor our services to meet your needs.",
   },
 ];
 
@@ -47,7 +50,7 @@ export default function Faq() {
       }}
     >
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
       >
@@ -64,23 +67,23 @@ export default function Faq() {
       </motion.div>
       {faqData.map((faq) => {
         return (
-          <motion.div key={faq.id}
+          <motion.div
+            key={faq.id}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
           >
             <Accordion
-              
               sx={{
-                width: { xs: 240, sm: 400, md: 700, lg: 800 },
+                width: { xs: 300, sm: 500, md: 700, lg: 800 },
                 padding: "1rem",
-                margin:"0.5rem",
-                background:"#221164",
-                color:"#fff"
+                margin: "0.5rem",
+                background: "#221164",
+                color: "#fff",
               }}
             >
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon sx={{color:"#fff"}}/>}
+                expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >

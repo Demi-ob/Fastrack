@@ -17,39 +17,39 @@ interface DataInterface {
 
 const testimonialData: DataInterface[] = [
   {
-    about: "Software Engineer",
-    name: "Lagbaja Demilade",
+    about: "CEO, Mech Solutions",
+    name: "Olaolu Mojetoluwa",
     review:
-      "I love fastrack, quality and reliable. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "images/demi.webp",
+      "Fastrack Security and Safety Ltd has been our go-to partner for all security services. Their dedication to safety and their professional team make them the best in the business.",
+    image: "images/israel.webp",
     background: "rgba(177, 18, 15, 1)", //red
     color: "#fff",
   },
   {
-    about: "Software Engineer",
-    name: "Lagbaja Demilade",
+    about: "",
+    name: "Mike Odunsanya",
     review:
-      "I love fastrack, quality and reliable. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "images/demi.webp",
+      "Choosing Fastrack Security and Safety Ltd was the best decision for our security needs. Their commitment to safety and their range of services make them the preferred choice.",
+    image: "images/taiwo.webp",
     background: "rgba(0, 0, 0, 0.1)", //grey
     color: "#000",
   },
 
   {
-    about: "Software Engineer",
-    name: "Lagbaja Demilade",
+    about: "Marketer",
+    name: "Daniella Ademolu",
     review:
-      "I love fastrack, quality and reliable. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "images/demi.webp",
+      "I've been a valuable customer for 6 years now, no regrets",
+    image: "images/pinte.webp",
     background: "rgba(0, 0, 100, 1)", //blue
     color: "#fff",
   },
   {
-    about: "Software Engineer",
-    name: "Lagbaja Demilade",
+    about: "Cystech",
+    name: "Ngozi Favour",
     review:
-      "I love fastrack, quality and reliable. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "images/demi.webp",
+      "Security audits by Fastrack have become a cornerstone of our cybersecurity strategy. Their evaluation criteria are rigorous, ensuring our information systems are robust and secure",
+    image: "images/pinter.webp",
     background: "rgba(255, 238, 6, 1)", //yellow
     color: "#000",
   },
@@ -106,7 +106,7 @@ const Testimonials = () => {
       style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
     >
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
       >
@@ -151,9 +151,10 @@ const Testimonials = () => {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
-                  gap: "5rem",
+                  gap: "1rem",
                   margin: "1rem",
                   color: testimonial.color,
+                  height:{xs:250, sm:160}
                 }}
               >
                 <Typography>{`"${testimonial.review}"`}</Typography>

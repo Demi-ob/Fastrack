@@ -80,7 +80,7 @@ export const Footer = () => {
           </Stack>
         </Grid>
       </Grid>
-      <Grid container style={{ maxWidth: "1400px" }}>
+      <Grid container style={{ maxWidth: "1400px" }} padding={2}>
         <Grid item xs={12} sm={6}>
           <Typography variant="body2">
             Copyright ©{currentYear} Fastrack Security | All rights reserved by fastrack

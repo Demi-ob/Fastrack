@@ -14,38 +14,38 @@ interface DataInterface {
 
 const testimonialData: DataInterface[] = [
   {
-    about: "Software Engineer",
-    name: "Lagbaja Demilade",
+    about: "Web Developer",
+    name: "Adebomi Adebiyi",
     review:
-      "I love fastrack, quality and reliable. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "images/demi.webp",
+      "The professionalism and expertise of Fastrack's team shine through in their security services. From vetting to event security, they cover all aspects with precision and care.",
+    image: "images/fortune.webp",
     background: "rgba(0, 0, 100, 1)" , //blue
     color:"#fff"
   },
   {
-    about: "Software Engineer",
-    name: "Lagbaja Demilade",
+    about: "",
+    name: "Hannah Auwa",
     review:
-      "I love fastrack, quality and reliable. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "images/demi.webp",
+      "Access control and CCTV solutions from Fastrack have significantly enhanced our facility's security. The real-time monitoring provides an added layer of protection we can count on",
+    image: "images/pint.webp",
     background: "rgba(255, 238, 6, 1)", //yellow
     color:"#000"
   },
   {
-    about: "Software Engineer",
-    name: "Lagbaja Demilade",
+    about: "CEO, Pledre",
+    name: "Odetara Demilade",
     review:
-      "I love fastrack, quality and reliable. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "The vetting and background checks provided by Fastrack are unparalleled. Their experienced team ensures that our company is staffed with trustworthy individuals. ",
     image: "images/demi.webp",
     background: "rgba(177, 18, 15, 1)", //red
     color:"#fff"
   },
   {
-    about: "Software Engineer",
-    name: "Lagbaja Demilade",
+    about: "",
+    name: "Agbeleye Samuel",
     review:
-      "I love fastrack, quality and reliable. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "images/demi.webp",
+      "I love fastrack ltd, quality and reliable service.",
+    image: "images/dolapo.webp",
     background: "rgba(0, 0, 0, 0.1)", //grey
     color:"#000"
   },
@@ -113,9 +113,10 @@ const TestimonialsSecond = () => {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
-                  gap: "5rem",
+                  gap: "1rem",
                   margin: "1rem",
                   color: testimonial.color,
+                  height:{xs:250, sm:160}
                 }}
               >
                 <Typography>{`"${testimonial.review}"`}</Typography>
