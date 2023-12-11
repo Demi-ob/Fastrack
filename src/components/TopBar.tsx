@@ -33,11 +33,13 @@ export default function TopBar() {
     <div
       style={{
         backdropFilter: "blur(2px)",
-        backgroundColor: "rgba(0, 0, 34, 0.9)",
+        // backgroundColor: "rgba(0, 0, 34, 0.9)",
+        backgroundColor: "#000",
         position: "sticky",
         top: 0,
         zIndex: 1000,
         padding: "0.5rem",
+        opacity: 0.8,
       }}
     >
       <Toolbar sx={{ maxWidth: "1600px", margin: "auto" }}>
@@ -67,9 +69,15 @@ export default function TopBar() {
         >
           {menuItems.map((item, index) => (
             <ListItem key={index} component="a" href={item.href}>
-              <ListItemText sx={{ color: "#fff", "&:hover":{
-                color:"#B1120F"
-              } }} primary={item.label} />
+              <ListItemText
+                sx={{
+                  color: "#fff",
+                  "&:hover": {
+                    color: "#B1120F",
+                  },
+                }}
+                primary={item.label}
+              />
             </ListItem>
           ))}
           <ListItem>

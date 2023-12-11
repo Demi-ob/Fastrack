@@ -111,7 +111,7 @@ export const Services = () => {
                 sx={{
                   padding: { xs: 2, md: 4 },
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-                  height: { xs: 270, sm: 440, md: 340, lg: 500 },
+                  height: { xs: 270, sm: 440, md: 340, lg: 400 },
                   background: "#F9FBFD",
                   "&:hover": {
                     cursor: "pointer",

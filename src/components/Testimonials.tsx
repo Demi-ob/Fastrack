@@ -32,7 +32,8 @@ const testimonialData: DataInterface[] = [
       "Choosing Fastrack Security and Safety Ltd was the best decision for our security needs. Their commitment to safety and their range of services make them the preferred choice.",
     image: "images/taiwo.webp",
     background: "rgba(0, 0, 0, 0.1)", //grey
-    color: "#000",
+    // color: "#000",
+    color: "#fff",
   },
 
   {

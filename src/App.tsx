@@ -16,17 +16,18 @@ import Map from "./components/Map";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#221164",
+      // main: "#221164",
+      main: "#c4221f",
     },
     secondary: {
-      main: "#B1120F",
+      // main: "#B1120F",
+      main: "#ccbf0c",
     },
   },
   typography: {
-    fontFamily: [
-      'Space Grotesk, sans-serif',
-      'Russo One, sans-serif',
-    ].join(','),
+    fontFamily: ["Space Grotesk, sans-serif", "Russo One, sans-serif"].join(
+      ","
+    ),
     button: {
       textTransform: "none",
     },
@@ -36,18 +37,25 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <TopBar />
-      <Hero />
-      <Clients />
-      <Services />
-      <Display />
-      <Gallery />
-      <Testimonials />
-      <TestimonialsSecond />
-      <Faq />
-      <Map />
-      <Contact />
-      <Footer />
+      <div
+        style={{
+          backgroundColor: "#000",
+          color: "#fff",
+        }}
+      >
+        <TopBar />
+        <Hero />
+        <Clients />
+        <Services />
+        <Display />
+        <Gallery />
+        <Testimonials />
+        <TestimonialsSecond />
+        <Faq />
+        <Map />
+        <Contact />
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 }

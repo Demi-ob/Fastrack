@@ -53,18 +53,29 @@ const Clients = () => {
         style={{
           display: "flex",
           justifyContent: "center",
-          alignItems:"center",
-          background: "#110a2c",
-          padding: 20,
+          alignItems: "center",
+          // background: "#110a2c",
+          background: "#282729",
+          padding: 10,
         }}
       >
         <div style={{ maxWidth: "1400px", width: "100%" }}>
           <Slider {...settings}>
-            <div style={{height:40}}><img src="images/client1.webp" alt="" /></div>
-            <div style={{height:40}}><img src="images/client2.webp" alt="" /></div>
-            <div style={{height:40}}><img src="images/client3.webp" alt="" /></div>
-            <div style={{height:40}}><img src="images/client4.webp" alt="" /></div>
-            <div style={{height:40}}><img src="images/client5.webp" alt="" /></div>
+            <div style={{ height: 40 }}>
+              <img src="images/client1.webp" alt="" />
+            </div>
+            <div style={{ height: 40 }}>
+              <img src="images/client2.webp" alt="" />
+            </div>
+            <div style={{ height: 40 }}>
+              <img src="images/client3.webp" alt="" />
+            </div>
+            <div style={{ height: 40 }}>
+              <img src="images/client4.webp" alt="" />
+            </div>
+            <div style={{ height: 40 }}>
+              <img src="images/client5.webp" alt="" />
+            </div>
           </Slider>
         </div>
       </div>

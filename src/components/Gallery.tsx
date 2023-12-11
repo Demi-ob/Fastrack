@@ -125,7 +125,8 @@ export const Gallery = () => {
         flexDirection: "column",
         alignItems: "center",
         paddingBottom: "3rem",
-        background: "#110a2c",
+        // background: "#110a2c",
+        background: "#0c3323",
         color: "#fff",
       }}
     >

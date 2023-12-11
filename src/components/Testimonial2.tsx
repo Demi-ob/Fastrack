@@ -8,8 +8,8 @@ interface DataInterface {
   name: string;
   about: string;
   image: string;
-  background:string;
-  color:string;
+  background: string;
+  color: string;
 }
 
 const testimonialData: DataInterface[] = [
@@ -19,8 +19,8 @@ const testimonialData: DataInterface[] = [
     review:
       "The professionalism and expertise of Fastrack's team shine through in their security services. From vetting to event security, they cover all aspects with precision and care.",
     image: "images/fortune.webp",
-    background: "rgba(0, 0, 100, 1)" , //blue
-    color:"#fff"
+    background: "rgba(0, 0, 100, 1)", //blue
+    color: "#fff",
   },
   {
     about: "",
@@ -32,25 +32,23 @@ const testimonialData: DataInterface[] = [
     color:"#000"
   },
   {
-    about: "CEO, Pledre",
+    about: "CTO, Heyfood",
     name: "Odetara Demilade",
     review:
       "The vetting and background checks provided by Fastrack are unparalleled. Their experienced team ensures that our company is staffed with trustworthy individuals. ",
     image: "images/demi.webp",
     background: "rgba(177, 18, 15, 1)", //red
-    color:"#fff"
+    color: "#fff",
   },
   {
     about: "",
     name: "Agbeleye Samuel",
-    review:
-      "I love fastrack ltd, quality and reliable service.",
+    review: "I love fastrack ltd, quality and reliable service.",
     image: "images/dolapo.webp",
     background: "rgba(0, 0, 0, 0.1)", //grey
-    color:"#000"
+    // color:"#000"
+    color: "#fff",
   },
-  
-  
 ];
 
 const TestimonialsSecond = () => {
@@ -100,12 +98,12 @@ const TestimonialsSecond = () => {
   };
 
   return (
-    <div style={{display:"flex", justifyContent:"center"}}>
-      <div style={{ overflow: "hidden", maxWidth:"1600px" }}>
-      <Slider {...settings}>
-        {testimonialData.map((testimonial, id) => (
-          <div key={id}>
-            <Box
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ overflow: "hidden", maxWidth: "1600px" }}>
+        <Slider {...settings}>
+          {testimonialData.map((testimonial, id) => (
+            <div key={id}>
+              <Box
                 sx={{
                   background: testimonial.background,
                   borderRadius: "15px",
@@ -116,7 +114,7 @@ const TestimonialsSecond = () => {
                   gap: "1rem",
                   margin: "1rem",
                   color: testimonial.color,
-                  height:{xs:250, sm:160}
+                  height: { xs: 250, sm: 160 },
                 }}
               >
                 <Typography>{`"${testimonial.review}"`}</Typography>
@@ -171,10 +169,10 @@ const TestimonialsSecond = () => {
                   </Hidden>
                 </div>
               </Box>
-          </div>
-        ))}
-      </Slider>
-    </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
