@@ -39,7 +39,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div
         style={{
-          backgroundColor: "#000",
+          backgroundColor: "#131313",
           color: "#fff",
         }}
       >
