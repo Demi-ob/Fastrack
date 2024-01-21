@@ -1,98 +1,6 @@
 import { useState, useEffect } from "react";
 import { Typography, Grid, Box } from "@mui/material";
-import { motion } from "framer-motion";
-
-interface GalleryInterface {
-  id: number;
-  image: string;
-  title: string;
-  description: string;
-}
-
-const galleryItems: GalleryInterface[] = [
-  {
-    id: 1,
-    image: "images/DSCN1852.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 2,
-    image: "images/DSCN1840.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 3,
-    image: "images/IMG_3323.webp",
-    title: "Installation gigs",
-    description: "",
-  },
-  {
-    id: 4,
-    image: "images/IMG_3600.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 5,
-    image: "images/DSCN1848.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 6,
-    image: "images/DSCN1820-scaled.webp",
-    title: "Installation gigs",
-    description: "",
-  },
-  {
-    id: 7,
-    image: "images/DSCN1816.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 8,
-    image: "images/DSCN1811.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 9,
-    image: "images/IMG_3594.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 10,
-    image: "images/DSCN1836.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 11,
-    image: "images/DSCN1829.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 12,
-    image: "images/DSCN1858.webp",
-    title: "Installation gigs",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-];
+import { galleryItems } from "./MapItems";
 
 export const Gallery = () => {
   const imagesToDisplay = 4;
@@ -130,14 +38,8 @@ export const Gallery = () => {
         color: "#fff",
       }}
     >
-      <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
-        >
       <Box mt={4}>
         <Typography
-          fontFamily="Russo One, sans-serif"
           lineHeight={1}
           fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
           fontWeight="bold"
@@ -148,7 +50,6 @@ export const Gallery = () => {
         </Typography>
         <Typography textAlign="center">Let our work speak for you</Typography>
       </Box>
-      </motion.div>
 
       <Grid
         container

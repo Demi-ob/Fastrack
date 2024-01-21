@@ -40,10 +40,11 @@ export const Contact = () => {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           <Typography
             p={2}
-            fontFamily="Russo One, sans-serif"
+            
             fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
             fontWeight="bold"
             mb={4}
@@ -58,6 +59,7 @@ export const Contact = () => {
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
+              viewport={{ once: true }}
             >
               <a
                 href={contact.link}

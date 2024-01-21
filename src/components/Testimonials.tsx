@@ -5,56 +5,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
+import { testimonialData } from "./MapItems";
 
-interface DataInterface {
-  review: string;
-  name: string;
-  about: string;
-  image: string;
-  background: string;
-  color: string;
-}
-
-const testimonialData: DataInterface[] = [
-  {
-    about: "CEO, Mech Solutions",
-    name: "Olaolu Mojetoluwa",
-    review:
-      "Fastrack Security and Safety Ltd has been our go-to partner for all security services. Their dedication to safety and their professional team make them the best in the business.",
-    image: "images/israel.webp",
-    background: "rgba(177, 18, 15, 1)", //red
-    color: "#fff",
-  },
-  {
-    about: "",
-    name: "Mike Odunsanya",
-    review:
-      "Choosing Fastrack Security and Safety Ltd was the best decision for our security needs. Their commitment to safety and their range of services make them the preferred choice.",
-    image: "images/taiwo.webp",
-    background: "rgba(0, 0, 0, 0.1)", //grey
-    // color: "#000",
-    color: "#fff",
-  },
-
-  {
-    about: "Marketer",
-    name: "Daniella Ademolu",
-    review:
-      "I've been a valuable customer for 6 years now, no regrets",
-    image: "images/pinte.webp",
-    background: "rgba(0, 0, 100, 1)", //blue
-    color: "#fff",
-  },
-  {
-    about: "Cystech",
-    name: "Ngozi Favour",
-    review:
-      "Security audits by Fastrack have become a cornerstone of our cybersecurity strategy. Their evaluation criteria are rigorous, ensuring our information systems are robust and secure",
-    image: "images/pinter.webp",
-    background: "rgba(255, 238, 6, 1)", //yellow
-    color: "#000",
-  },
-];
 
 const Testimonials = () => {
   const settings = {
@@ -107,6 +59,7 @@ const Testimonials = () => {
       style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
     >
       <motion.div
+      viewport={{ once: true }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
@@ -119,7 +72,7 @@ const Testimonials = () => {
           }}
         >
           <Typography
-            fontFamily="Russo One, sans-serif"
+            
             fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
             fontWeight="bold"
             color="secondary"
@@ -129,7 +82,7 @@ const Testimonials = () => {
             Happy customers
           </Typography>
           <Typography
-            fontFamily="Russo One, sans-serif"
+            
             fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
             fontWeight="bold"
             textAlign="center"
