@@ -6,9 +6,9 @@ const Hero = () => {
     <div
       style={{
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         position: "relative",
-        backgroundImage: 'url("images/heroimg.webp")',
+        backgroundImage: 'url("images/hero-image.png")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -20,18 +20,19 @@ const Hero = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.75)",
+          backgroundColor: "rgba(0, 0, 0, 0.45)",
         }}
       ></div>
 
       <motion.div
-      initial={{ opacity:0, y: 300 }}
-      animate={{ opacity:1, y:0 }}
-      transition={{type: "spring", duration: 1.5, delay: 0.2 }}
+        viewport={{ once: true }}
+        initial={{ opacity: 0, y: 300 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
       >
         <Box
-          py={{xs:10, sm:8, md:6, lg:4}}
-          margin={{ xs: 4, sm: 6, md: 9, lg: 12 }}
+          py={{ xs: 10, sm: 8, md: 6, lg: 4 }}
+          margin={{ xs: 4, sm: 6, md: 8, lg: 10 }}
           sx={{
             position: "relative",
             display: "flex",
@@ -39,31 +40,21 @@ const Hero = () => {
             justifyContent: "center",
           }}
         >
+          {/* <Stack height={15} mb={2}  maxWidth={600} style={{background:"#B1120F"}}></Stack> */}
           <Typography
             variant="h1"
             fontWeight="bold"
             color="#fff"
-            fontSize={{ xs: 40, sm: 50, md: 60, lg: 70, xl: 80 }}
-            textAlign="center"
-            fontFamily="Russo One, sans-serif"
+            fontSize={{ xs: 35, sm: 45, md: 55, lg: 65, xl: 75 }}
+            maxWidth={800}
           >
-            Safety First
+            Navigating Security Challenges with Expertise
           </Typography>
-          <Typography
-            variant="h1"
-            fontWeight="bold"
-            fontSize={{ xs: 40, sm: 50, md: 60, lg: 70, xl: 80 }}
-            textAlign="center"
-            color="#fff"
-            fontFamily="Russo One, sans-serif"
-          >
-            Always
-          </Typography>
+
           <Typography
             color="#fff"
-            maxWidth="700px"
+            maxWidth={700}
             mt={4}
-            textAlign="center"
             fontSize={{ xs: 14, sm: 16, md: 18, lg: 20, xl: 22 }}
           >
             Fastrack security and safety ltd is in a multiple line of security
@@ -71,12 +62,7 @@ const Hero = () => {
             vetting of company staff, and more...
           </Typography>
           <Hidden smDown>
-            <Stack
-              direction="row"
-              spacing={2}
-              mt={4}
-              style={{ display: "flex", justifyContent: "center" }}
-            >
+            <Stack direction="row" spacing={2} mt={4}>
               <a href="#contact">
                 <Button variant="contained" color="secondary" size="large">
                   Contact us
@@ -84,7 +70,7 @@ const Hero = () => {
               </a>
               <a href="#services">
                 <Button
-                  variant="outlined"
+                  variant="contained"
                   size="large"
                   sx={{
                     color: "#000",

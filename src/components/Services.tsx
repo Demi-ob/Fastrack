@@ -1,43 +1,9 @@
 import { Typography, Grid, Stack, Card, Box } from "@mui/material";
 import { styled } from "@mui/system";
-import PatternIcon from "@mui/icons-material/Pattern";
-import ElectricCarIcon from "@mui/icons-material/ElectricCar";
-import PolicyIcon from "@mui/icons-material/Policy";
-import NestCamWiredStandIcon from "@mui/icons-material/NestCamWiredStand";
+import { cardInfo } from "./MapItems";
 import { motion } from "framer-motion";
 
-const cardInfo = [
-  {
-    id: 1,
-    icon: <PatternIcon style={{ fontSize: "3rem" }} color="secondary" />,
-    title: "Vetting and Background checks",
-    description:
-      "Our core team of experienced employee screening analysts and support staff have more than 40 years of experience in employee screening and investigation industry",
-  },
-  {
-    id: 2,
-    icon: <ElectricCarIcon style={{ fontSize: "3rem" }} color="secondary" />,
-    title: "Vehicle Tracking",
-    description:
-      "We have a high tech based Fleet Management Solution that makes automatic periodic report to the web. Such reports as: Vehicle function on/off Overspeed alert Idle time report Trip Start etc..",
-  },
-  {
-    id: 3,
-    icon: <PolicyIcon style={{ fontSize: "3rem" }} color="secondary" />,
-    title: "Security audit",
-    description:
-      "We will systematically evaluate the security of your company’s information system by measuring how well it conforms to a set of established criteria.",
-  },
-  {
-    id: 4,
-    icon: (
-      <NestCamWiredStandIcon style={{ fontSize: "3rem" }} color="secondary" />
-    ),
-    title: "Access control and CCTV",
-    description:
-      "At Fastrack, we ensure only authorized personnel access specific areas. We also provide strategically placed CCTV cameras that provide real-time monitoring and continuous recording. ",
-  },
-];
+
 
 const HoverableCard = styled(Card)(({ theme }) => ({
   borderRadius: "15px",
@@ -73,6 +39,7 @@ export const Services = () => {
       }}
     >
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
@@ -83,7 +50,6 @@ export const Services = () => {
           variant="h2"
           fontWeight="bold"
           fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
-          fontFamily="Russo One, sans-serif"
         >
           What do we do
         </Typography>
@@ -92,13 +58,13 @@ export const Services = () => {
           fontWeight="bold"
           fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
           color="secondary"
-          fontFamily="Russo One, sans-serif"
         >
           ?
         </Typography>
       </motion.div>
 
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 1.5, delay: 0.2 }}

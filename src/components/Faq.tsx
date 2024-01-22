@@ -5,42 +5,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Box } from "@mui/material";
 import { motion } from "framer-motion";
-
-interface FAQItem {
-  id: number;
-  question: string;
-  answer: string;
-}
-
-const faqData: FAQItem[] = [
-  {
-    id: 1,
-    question: "What is the Vehicle Tracking system offered by Fastrack?",
-    answer:
-      " Fastrack provides a high-tech Fleet Management Solution that offers automatic periodic reports to the web. This includes detailed reports on vehicle function, overspeed alerts, idle time reports, trip start information, and more.",
-  },
-  {
-    id: 2,
-    question:
-      "How does Fastrack conduct security audits for information systems?",
-    answer:
-      "We systematically evaluate the security of your company's information system by measuring how well it conforms to a set of established criteria. Our rigorous audits help identify vulnerabilities and strengthen your cybersecurity.",
-  },
-  {
-    id: 3,
-    question:
-      " Does Fastrack offer customized security solutions for different industries?",
-    answer:
-      "Yes, Fastrack understands that security needs vary across industries. We offer customized security solutions to address the unique requirements of different sectors, ensuring comprehensive protection.",
-  },
-  {
-    id: 4,
-    question:
-      "How can I inquire about Fastrack's services for my specific needs?",
-    answer:
-      "Feel free to reach out to our dedicated team through the contact information provided on our website. We are here to discuss your specific security requirements and tailor our services to meet your needs.",
-  },
-];
+import { faqData } from "./MapItems";
 
 export default function Faq() {
   return (
@@ -53,13 +18,13 @@ export default function Faq() {
       }}
     >
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
       >
         <Typography
           lineHeight={1}
-          fontFamily="Russo One, sans-serif"
           fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
           color="secondary"
           fontWeight="bold"
@@ -71,6 +36,7 @@ export default function Faq() {
       {faqData.map((faq) => {
         return (
           <motion.div
+            viewport={{ once: true }}
             key={faq.id}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

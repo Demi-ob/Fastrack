@@ -16,6 +16,7 @@ export const Display = () => {
       >
         <div style={{ width: "100%" }}>
           <motion.div
+          viewport={{ once: true }}
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
@@ -41,7 +42,7 @@ export const Display = () => {
                   color="primary"
                   fontSize={{ xs: 25, sm: 30, md: 35, lg: 40, xl: 45 }}
                   lineHeight={1}
-                  fontFamily="Russo One, sans-serif"
+                  
                 >
                   Assets Protection
                 </Typography>
@@ -94,6 +95,7 @@ export const Display = () => {
 
         <div style={{ width: "100%" }}>
           <motion.div
+          viewport={{ once: true }}
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
@@ -147,7 +149,7 @@ export const Display = () => {
                   color="primary"
                   fontSize={{ xs: 25, sm: 30, md: 35, lg: 40, xl: 45 }}
                   lineHeight={1}
-                  fontFamily="Russo One, sans-serif"
+                  
                 >
                   Safety Devices and Human Tracking Devices
                 </Typography>
@@ -202,6 +204,7 @@ export const Display = () => {
 
         <div style={{ width: "100%" }}>
           <motion.div
+          viewport={{ once: true }}
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
@@ -223,7 +226,7 @@ export const Display = () => {
                   color="primary"
                   fontSize={{ xs: 25, sm: 30, md: 35, lg: 40, xl: 45 }}
                   lineHeight={1}
-                  fontFamily="Russo One, sans-serif"
+                  
                 >
                   Event Security Services and Crowd Management
                 </Typography>

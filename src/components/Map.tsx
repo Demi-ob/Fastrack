@@ -14,6 +14,7 @@ const Map = () => {
       }}
     >
       <motion.div
+      viewport={{ once: true }}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
@@ -31,7 +32,7 @@ const Map = () => {
           variant="h2"
           fontWeight="bold"
           fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
-          fontFamily="Russo One, sans-serif"
+          
         >
           Where are we
         </Typography>
@@ -40,7 +41,7 @@ const Map = () => {
           fontWeight="bold"
           fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
           color="secondary"
-          fontFamily="Russo One, sans-serif"
+          
         >
           ?
         </Typography>
