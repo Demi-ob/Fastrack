@@ -100,21 +100,21 @@ export const Footer = () => {
           <Stack spacing={2} direction="row" style={{ color: "#fff" }}>
             <a
               style={{ color: "#fff" }}
-              href="https://facebook.com/pledreHQ"
+              href="https://facebook.com/fastrackHQ"
               className="icon-link"
             >
               <FacebookIcon />
             </a>
             <a
               style={{ color: "#fff" }}
-              href="https://twitter.com/pledreHQ"
+              href="https://twitter.com/fastrackHQ"
               className="icon-link"
             >
               <TwitterIcon />
             </a>
             <a
               style={{ color: "#fff" }}
-              href="https://instagram.com/pledre"
+              href="https://instagram.com/fastrack"
               className="icon-link"
             >
               <InstagramIcon />
@@ -128,7 +128,7 @@ export const Footer = () => {
             </a>
             <a
               style={{ color: "#fff" }}
-              href="https://www.linkedin.com/company/pledre"
+              href="https://www.linkedin.com/company/fastrack"
               className="icon-link"
             >
               <LinkedinIcon />

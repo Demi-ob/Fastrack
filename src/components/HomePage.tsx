@@ -12,6 +12,7 @@ import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 import { Gallery } from "./Gallery";
 import Map from "./Map";
+// import { FeatureGrid } from "./FeatureGrid";
 
 const theme = createTheme({
   palette: {
@@ -55,6 +56,7 @@ const HomePage = () => {
       <TopBar />
       <Hero />
       {/* <Clients /> */}
+      {/* <FeatureGrid/> */}
       <Services />
       <Display />
       <Gallery />

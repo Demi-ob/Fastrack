@@ -46,7 +46,7 @@ const Hero = () => {
             fontWeight="bold"
             color="#fff"
             fontSize={{ xs: 35, sm: 45, md: 55, lg: 65, xl: 75 }}
-            maxWidth={1000}
+            maxWidth={800}
           >
             Navigating Security Challenges with Expertise
           </Typography>
