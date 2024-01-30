@@ -8,9 +8,10 @@ const Hero = () => {
         display: "flex",
         justifyContent: "flex-start",
         position: "relative",
-        backgroundImage: 'url("images/hero-image.png")',
+        backgroundImage: 'url("images/hero-image.webp")',
         backgroundSize: "cover",
         backgroundPosition: "center",
+        height: '90vh'
       }}
     >
       <div
@@ -20,7 +21,7 @@ const Hero = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.45)",
+          backgroundColor: "rgba(0, 0, 0, 0.55)",
         }}
       ></div>
 
@@ -32,12 +33,9 @@ const Hero = () => {
       >
         <Box
           py={{ xs: 10, sm: 8, md: 6, lg: 4 }}
-          margin={{ xs: 4, sm: 6, md: 8, lg: 10 }}
+          margin={{ xs: 4, sm: 6, md: 8, lg: 16 }}
           sx={{
             position: "relative",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
           }}
         >
           {/* <Stack height={15} mb={2}  maxWidth={600} style={{background:"#B1120F"}}></Stack> */}
@@ -51,16 +49,16 @@ const Hero = () => {
             Navigating Security Challenges with Expertise
           </Typography>
 
-          <Typography
-            color="#fff"
-            maxWidth={700}
-            mt={4}
-            fontSize={{ xs: 14, sm: 16, md: 18, lg: 20, xl: 22 }}
-          >
-            Fastrack security and safety ltd is in a multiple line of security
-            services such as man guarding, CCTV gadgets and installation,
-            vetting of company staff, and more...
-          </Typography>
+            {/* <Typography
+              color="#fff"
+              maxWidth={700}
+              mt={4}
+              fontSize={{ xs: 14, sm: 16, md: 18, lg: 20, xl: 22 }}
+            >
+              Fastrack security and safety ltd is in a multiple line of security
+              services such as man guarding, CCTV gadgets and installation,
+              vetting of company staff, and more...
+            </Typography> */}
           <Hidden smDown>
             <Stack direction="row" spacing={2} mt={4}>
               <a href="#contact">
@@ -84,6 +82,7 @@ const Hero = () => {
                   Services
                 </Button>
               </a>
+              
             </Stack>
           </Hidden>
           <Hidden smUp>

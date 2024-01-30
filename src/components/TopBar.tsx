@@ -32,14 +32,11 @@ export default function TopBar() {
   return (
     <div
       style={{
-        backdropFilter: "blur(2px)",
-        // backgroundColor: "rgba(0, 0, 34, 0.9)",
         backgroundColor: "#000",
         position: "sticky",
         top: 0,
         zIndex: 1000,
-        padding: "0.5rem",
-        opacity: 0.8,
+        padding: "0.3rem",
       }}
     >
       <Toolbar sx={{ maxWidth: "1600px", margin: "auto" }}>
@@ -110,7 +107,7 @@ export default function TopBar() {
         anchor="right"
         open={isDrawerOpen}
         onClose={handleDrawerClose}
-        sx={{ display: { xs: "block", md: "none" } }}
+        sx={{ display: { xs: "block", md: "none"}}}
       >
         <List sx={{ width: "15rem", paddingLeft: "1rem" }}>
           <div style={{ display: "flex", alignItems: "center" }}>

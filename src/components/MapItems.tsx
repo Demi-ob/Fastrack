@@ -1,42 +1,36 @@
 import PatternIcon from "@mui/icons-material/Pattern";
 import ElectricCarIcon from "@mui/icons-material/ElectricCar";
-import PolicyIcon from "@mui/icons-material/Policy";
 import NestCamWiredStandIcon from "@mui/icons-material/NestCamWiredStand";
 
 export const cardInfo = [
   {
     id: 1,
-    icon: <PatternIcon style={{ fontSize: "3rem" }} color="secondary" />,
+    icon: <PatternIcon style={{ fontSize: "3.5rem", color:"#fff" }} />,
     title: "Vetting and Background checks",
     description:
-      "Our core team of experienced employee screening analysts and support staff have more than 40 years of experience in employee screening and investigation industry",
+      "40 years expeprience in employee screening and investigation industry",
+    image: "images/service2.webp",
   },
   {
     id: 2,
-    icon: <ElectricCarIcon style={{ fontSize: "3rem" }} color="secondary" />,
+    icon: <ElectricCarIcon style={{ fontSize: "3.5rem", color:"#fff" }} />,
     title: "Vehicle Tracking",
     description:
-      "We have a high tech based Fleet Management Solution that makes automatic periodic report to the web. Such reports as: Vehicle function on/off Overspeed alert Idle time report Trip Start etc..",
+      "High tech based Fleet Management Solution that makes automatic periodic report to the web.",
+    image: "images/service1.webp",
   },
+
   {
     id: 3,
-    icon: <PolicyIcon style={{ fontSize: "3rem" }} color="secondary" />,
-    title: "Security audit",
-    description:
-      "We will systematically evaluate the security of your company’s information system by measuring how well it conforms to a set of established criteria.",
-  },
-  {
-    id: 4,
     icon: (
-      <NestCamWiredStandIcon style={{ fontSize: "3rem" }} color="secondary" />
+      <NestCamWiredStandIcon style={{ fontSize: "3.5rem", color:"#fff" }} />
     ),
     title: "Access control and CCTV",
     description:
-      "At Fastrack, we ensure only authorized personnel access specific areas. We also provide strategically placed CCTV cameras that provide real-time monitoring and continuous recording. ",
+      "Strategically placed CCTV cameras that provide real-time monitoring and continuous recording. ",
+    image: "images/service3.webp",
   },
 ];
-
-
 
 export const testimonialData: ITestimonialDataInterface[] = [
   {
@@ -117,121 +111,141 @@ export const testimonialData2: ITestimonialDataInterface[] = [
   },
 ];
 
+export const faqData: IFAQItem[] = [
+  {
+    id: 1,
+    question: "What is the Vehicle Tracking system offered by Fastrack?",
+    answer:
+      " Fastrack provides a high-tech Fleet Management Solution that offers automatic periodic reports to the web. This includes detailed reports on vehicle function, overspeed alerts, idle time reports, trip start information, and more.",
+  },
+  {
+    id: 2,
+    question:
+      "How does Fastrack conduct security audits for information systems?",
+    answer:
+      "We systematically evaluate the security of your company's information system by measuring how well it conforms to a set of established criteria. Our rigorous audits help identify vulnerabilities and strengthen your cybersecurity.",
+  },
+  {
+    id: 3,
+    question:
+      " Does Fastrack offer customized security solutions for different industries?",
+    answer:
+      "Yes, Fastrack understands that security needs vary across industries. We offer customized security solutions to address the unique requirements of different sectors, ensuring comprehensive protection.",
+  },
+  {
+    id: 4,
+    question:
+      "How can I inquire about Fastrack's services for my specific needs?",
+    answer:
+      "Feel free to reach out to our dedicated team through the contact information provided on our website. We are here to discuss your specific security requirements and tailor our services to meet your needs.",
+  },
+];
 
-  
- export const faqData: IFAQItem[] = [
-    {
-      id: 1,
-      question: "What is the Vehicle Tracking system offered by Fastrack?",
-      answer:
-        " Fastrack provides a high-tech Fleet Management Solution that offers automatic periodic reports to the web. This includes detailed reports on vehicle function, overspeed alerts, idle time reports, trip start information, and more.",
-    },
-    {
-      id: 2,
-      question:
-        "How does Fastrack conduct security audits for information systems?",
-      answer:
-        "We systematically evaluate the security of your company's information system by measuring how well it conforms to a set of established criteria. Our rigorous audits help identify vulnerabilities and strengthen your cybersecurity.",
-    },
-    {
-      id: 3,
-      question:
-        " Does Fastrack offer customized security solutions for different industries?",
-      answer:
-        "Yes, Fastrack understands that security needs vary across industries. We offer customized security solutions to address the unique requirements of different sectors, ensuring comprehensive protection.",
-    },
-    {
-      id: 4,
-      question:
-        "How can I inquire about Fastrack's services for my specific needs?",
-      answer:
-        "Feel free to reach out to our dedicated team through the contact information provided on our website. We are here to discuss your specific security requirements and tailor our services to meet your needs.",
-    },
-  ];
-  
+export const galleryItems: IGalleryInterface[] = [
+  {
+    id: 1,
+    image: "images/DSCN1852.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    id: 2,
+    image: "images/DSCN1840.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    id: 3,
+    image: "images/IMG_3323.webp",
+    title: "Installation gigs",
+    description: "",
+  },
+  {
+    id: 4,
+    image: "images/IMG_3600.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    id: 5,
+    image: "images/DSCN1848.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    id: 6,
+    image: "images/DSCN1820-scaled.webp",
+    title: "Installation gigs",
+    description: "",
+  },
+  {
+    id: 7,
+    image: "images/DSCN1816.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    id: 8,
+    image: "images/DSCN1811.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    id: 9,
+    image: "images/IMG_3594.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    id: 10,
+    image: "images/DSCN1836.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    id: 11,
+    image: "images/DSCN1829.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    id: 12,
+    image: "images/DSCN1858.webp",
+    title: "Installation gigs",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+];
 
-
-  export const galleryItems: IGalleryInterface[] = [
-    {
-      id: 1,
-      image: "images/DSCN1852.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      id: 2,
-      image: "images/DSCN1840.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      id: 3,
-      image: "images/IMG_3323.webp",
-      title: "Installation gigs",
-      description: "",
-    },
-    {
-      id: 4,
-      image: "images/IMG_3600.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      id: 5,
-      image: "images/DSCN1848.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      id: 6,
-      image: "images/DSCN1820-scaled.webp",
-      title: "Installation gigs",
-      description: "",
-    },
-    {
-      id: 7,
-      image: "images/DSCN1816.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      id: 8,
-      image: "images/DSCN1811.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      id: 9,
-      image: "images/IMG_3594.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      id: 10,
-      image: "images/DSCN1836.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      id: 11,
-      image: "images/DSCN1829.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      id: 12,
-      image: "images/DSCN1858.webp",
-      title: "Installation gigs",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-  ];
+export const displayItems: IDisplayInterface[] = [
+  {
+    id: 1,
+    image: "images/disp3.webp",
+    title: "Assets Protection",
+    description:
+      "Our Facility and Asset Protection team meets the high standards of security. Ensuring the clients personal safety and protection from unlawful interference and other illegal acts.",
+  },
+  {
+    id: 2,
+    image: "images/disp2.webp",
+    title: "Safety and Human Tracking Devices",
+    description:
+      "We provide Personal Safety Devices and tracking devices designed with advanced features that offers location tracking and movement history to keep you safe and connected.",
+  },
+  {
+    id: 3,
+    image: "images/disp1.webp",
+    title: "Event Security Services and Crowd Management",
+    description:
+      "For large-scale events, Our personnels perform the critical pre-event tasks as well as provide the required level of security during and after the event.",
+  },
+];
