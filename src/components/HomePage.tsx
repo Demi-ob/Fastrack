@@ -31,6 +31,7 @@ const theme = createTheme({
     ),
     button: {
       textTransform: "none",
+      borderRadius: '50%'
     },
     h1:{
       fontFamily: "DM Sans, sans-serif"

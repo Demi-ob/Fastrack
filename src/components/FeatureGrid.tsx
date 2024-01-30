@@ -1,15 +1,36 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
+
+const styles = {
+  gridBox: {
+    margin: "auto",
+    padding: 4,
+    spacing: 2,
+    height: 200,
+    width: 350,
+    background: "#fff", 
+    color: "#000",
+  },
+};
 
 export const FeatureGrid = () => {
   return (
-    <Stack className="service-card"
-    sx={{
-      background: "",
-      "&:hover": {
-        cursor: "pointer",
-      },
-    }}>
-      <Stack padding={2} spacing={2} height={400} width={600} direction="row">
+    <Grid
+      item
+      padding={5}
+      className="service-card"
+      sx={{
+        background: "",
+        "&:hover": {
+          cursor: "pointer",
+        },
+      }}
+    >
+      <Grid
+        item
+        xs={3}
+        direction="row"
+        sx={styles.gridBox}
+      >
         <Box>
           <Typography
             fontSize={{ xs: 18, sm: 20, md: 22, lg: 24, xl: 26 }}
@@ -20,14 +41,10 @@ export const FeatureGrid = () => {
           </Typography>
           <Typography fontSize={{ xs: 12, sm: 14, md: 16, lg: 18, xl: 20 }}>
             At Fastrack, we ensure only authorized personnel access specific
-            areas. We also provide strategically placed CCTV cameras that
-            provide real-time monitoring and continuous recording.
+            areas.
           </Typography>
         </Box>
-        <Stack  height={200}>
-        <img src="./images/cctv.png" height="100%" alt="" />
-        </Stack>
-      </Stack>
-    </Stack>
+      </Grid>
+    </Grid>
   );
 };

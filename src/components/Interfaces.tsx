@@ -26,3 +26,10 @@ interface IGalleryInterface {
     title: string;
     description: string;
   }
+
+  interface IDisplayInterface {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+  }

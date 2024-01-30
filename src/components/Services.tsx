@@ -3,17 +3,15 @@ import { styled } from "@mui/system";
 import { cardInfo } from "./MapItems";
 import { motion } from "framer-motion";
 
-
-
 const HoverableCard = styled(Card)(({ theme }) => ({
-  borderRadius: "15px",
+  // borderRadius: "15px",
   background: "transparent",
   display: "flex",
   flexDirection: "column",
   transition: "background-color 0.3s ease-in-out, transform 0.3s ease-in-out",
   "&:hover": {
     backgroundColor: theme.palette.primary.main,
-    transform: "scale(1.08)",
+    transform: "translatey(-5%)",
     "& .MuiTypography-root": {
       color: theme.palette.common.white,
     },
@@ -69,23 +67,38 @@ export const Services = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
       >
-        <Grid container sx={{ maxWidth: "1600px", width: "100%" }}>
+        <Grid
+          container
+          sx={{
+            maxWidth: "1600px",
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           {cardInfo.map((eachCard) => (
             <Grid item xs={12} sm={6} lg={3} key={eachCard.id} padding={2}>
               <HoverableCard
                 className="service-card"
                 sx={{
-                  padding: { xs: 2, md: 4 },
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-                  height: { xs: 270, sm: 440, md: 340, lg: 400 },
+                  height: { xs: 270, sm: 440, md: 340, lg: 450 },
                   background: "#F9FBFD",
                   "&:hover": {
                     cursor: "pointer",
                   },
                 }}
               >
-                <Stack spacing={{ xs: 2, md: 4 }} flexGrow={1}>
-                  <Box>{eachCard.icon}</Box>
+                <Stack height={150} overflow="hidden" style={{display: "flex", justifyContent:"center", alignItems: "center"}}>
+                  <img style={{position: "relative", zIndex:0}} src={eachCard.image} width="100%" alt="" />
+                  <Box sx={{position: "absolute", zIndex:2}}>{eachCard.icon}</Box>
+                </Stack>
+               
+                <Stack
+                  spacing={{ xs: 2, md: 3 }}
+                  flexGrow={1}
+                  sx={{ padding: { xs: 2, md: 4 } }}
+                >
                   <Typography
                     fontSize={{ xs: 18, sm: 20, md: 22, lg: 24, xl: 26 }}
                     fontWeight="bold"

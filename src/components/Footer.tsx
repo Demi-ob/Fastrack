@@ -46,7 +46,7 @@ export const Footer = () => {
             </a>
           </Stack>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} padding={2}>
+        <Grid item xs={12} sm={6} md={5} padding={2}>
           <Stack spacing={1.5} mb="1.5rem">
             <Typography fontWeight="bold">Our Services</Typography>
             <Typography variant="body2">Vehicle Tracking</Typography>
@@ -64,7 +64,7 @@ export const Footer = () => {
             </Typography>
           </Stack>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} padding={2}>
+        <Grid item xs={12} sm={6} md={3} padding={2}>
           <Stack spacing={1.5} mb="1.5rem">
             <Typography fontWeight="bold">Contact Info</Typography>
             <Typography variant="body2">
@@ -100,12 +100,12 @@ export const Footer = () => {
           <Stack spacing={2} direction="row" style={{ color: "#fff" }}>
             <a
               style={{ color: "#fff" }}
-              href="https://facebook.com/fastrackHQ"
+              href="https://m.facebook.com/p/Fastrack-Security-Safety-Limited-100070147372631/"
               className="icon-link"
             >
               <FacebookIcon />
             </a>
-            <a
+            {/* <a
               style={{ color: "#fff" }}
               href="https://twitter.com/fastrackHQ"
               className="icon-link"
@@ -118,21 +118,21 @@ export const Footer = () => {
               className="icon-link"
             >
               <InstagramIcon />
-            </a>
+            </a> */}
             <a
               style={{ color: "#fff" }}
-              href="tel:+2348156459825"
+              href="tel:+2348030671310"
               className="icon-link"
             >
               <CallIcon />
             </a>
-            <a
+            {/* <a
               style={{ color: "#fff" }}
               href="https://www.linkedin.com/company/fastrack"
               className="icon-link"
             >
               <LinkedinIcon />
-            </a>
+            </a> */}
           </Stack>
         </Grid>
       </Grid>
