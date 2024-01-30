@@ -82,7 +82,7 @@ export const Services = () => {
                 className="service-card"
                 sx={{
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-                  height: { xs: 270, sm: 440, md: 340, lg: 450 },
+                  height: { xs: 280, sm: 340, lg: 450 },
                   background: "#F9FBFD",
                   "&:hover": {
                     cursor: "pointer",
@@ -97,7 +97,7 @@ export const Services = () => {
                 <Stack
                   spacing={{ xs: 2, md: 3 }}
                   flexGrow={1}
-                  sx={{ padding: { xs: 2, md: 4 } }}
+                  padding= {{ xs: 2, md: 4 }} 
                 >
                   <Typography
                     fontSize={{ xs: 18, sm: 20, md: 22, lg: 24, xl: 26 }}
