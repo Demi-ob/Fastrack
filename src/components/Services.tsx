@@ -49,7 +49,7 @@ export const Services = () => {
           fontWeight="bold"
           fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
         >
-         Our services
+          Our services
         </Typography>
         {/* <Typography
           variant="h2"
@@ -60,6 +60,13 @@ export const Services = () => {
           ?
         </Typography> */}
       </motion.div>
+      <Typography
+        style={{ maxWidth: "700px", padding: "0px 10px", textAlign: "center" }}
+      >
+        We specialize in comprehensive security solutions encompassing a range
+        of services, including manned guarding, installation of state-of-the-art
+        CCTV devices, thorough vetting of company personnel, and more.
+      </Typography>
 
       <motion.div
         viewport={{ once: true }}
@@ -89,11 +96,26 @@ export const Services = () => {
                   },
                 }}
               >
-                <Stack height={150} overflow="hidden" style={{display: "flex", justifyContent:"center", alignItems: "center"}}>
-                  <img style={{position: "relative", zIndex:0}} src={eachCard.image} width="100%" alt="" />
-                  <Box sx={{position: "absolute", zIndex:2}}>{eachCard.icon}</Box>
+                <Stack
+                  height={150}
+                  overflow="hidden"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    style={{ position: "relative", zIndex: 0 }}
+                    src={eachCard.image}
+                    width="100%"
+                    alt=""
+                  />
+                  <Box sx={{ position: "absolute", zIndex: 2 }}>
+                    {eachCard.icon}
+                  </Box>
                 </Stack>
-               
+
                 <Stack
                   spacing={{ xs: 2, md: 3 }}
                   flexGrow={1}

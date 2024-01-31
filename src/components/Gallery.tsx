@@ -26,69 +26,81 @@ export const Gallery = () => {
   }, [imagesToDisplay]);
 
   return (
-    <div
-      id="gallery"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        paddingBottom: "3rem",
-        // background: "#110a2c",
-        // background: "#0c3323",
-        background: "#b1120f",
-        color: "#fff",
-      }}
-    >
-      <Box mt={4}>
-        <Typography
-          lineHeight={1}
-          fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
-          fontWeight="bold"
-          m={{ xs: 3 }}
-          textAlign="center"
-        >
-          Gallery
-        </Typography>
-        <Typography textAlign="center">Our work and culture speak for us</Typography>
-      </Box>
-
-      <Grid
-        container
-        padding={6}
-        sx={{ maxWidth: "1600px", display: "flex", justifyContent: "center" }}
+    <div style={{ padding: "20px" }}>
+      <div
+        id="gallery"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          paddingBottom: "3rem",
+          // background: "#110a2c",
+          // background: "#0c3323",
+          background: "#b1120f",
+          color: "#fff",
+          borderRadius: "15px",
+          maxWidth: "1400px",
+          margin: "auto",
+        }}
       >
-        {visibleImages.map((gallery, id) => {
-          return (
-            <Grid
-              item
-              padding={{ xs: 2 }}
-              key={id}
-              xs={12}
-              sm={6}
-              md={3}
-              sx={{ display: "flex", justifyContent: "center" }}
-            >
-              <Box
-                height={{ xs: 300, sm: 350, md: 400, lg: 450 }}
-                width={{ xs: 300 }}
-                sx={{
-                  borderRadius: "15px",
-                  overflow: "hidden",
-                  // boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.7)",
-                  boxShadow: "0px 0px 10px #0000004f"
-                }}
+        <Box mt={4}>
+          <Typography
+            lineHeight={1}
+            fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
+            fontWeight="bold"
+            m={{ xs: 3 }}
+            textAlign="center"
+          >
+            Gallery
+          </Typography>
+          <Typography textAlign="center" style={{ maxWidth: "500px" }}>
+            A snapshot of our top-tier services in manned guarding, CCTV
+            installations, and personnel vetting.
+          </Typography>
+        </Box>
+
+        <Grid
+          container
+          padding={6}
+          sx={{ maxWidth: "1600px", display: "flex", justifyContent: "center" }}
+        >
+          {visibleImages.map((gallery, id) => {
+            return (
+              <Grid
+                item
+                padding={{ xs: 2 }}
+                key={id}
+                xs={12}
+                sm={6}
+                md={3}
+                sx={{ display: "flex", justifyContent: "center" }}
               >
-                <img
-                  className="gallery-image"
-                  src={gallery.image}
-                  alt=""
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                />
-              </Box>
-            </Grid>
-          );
-        })}
-      </Grid>
+                <Box
+                  height={{ xs: 300, sm: 350, md: 400, lg: 450 }}
+                  width={{ xs: 300 }}
+                  sx={{
+                    borderRadius: "15px",
+                    overflow: "hidden",
+                    // boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.7)",
+                    boxShadow: "0px 0px 10px #0000004f",
+                  }}
+                >
+                  <img
+                    className="gallery-image"
+                    src={gallery.image}
+                    alt=""
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </Box>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </div>
     </div>
   );
 };
