@@ -61,11 +61,10 @@ export const Services = () => {
         </Typography> */}
       </motion.div>
       <Typography
-        style={{ maxWidth: "700px", padding: "0px 10px", textAlign: "center" }}
+        style={{ maxWidth: "500px", padding: "0px 10px", textAlign: "center" }}
       >
         We specialize in comprehensive security solutions encompassing a range
-        of services, including manned guarding, installation of state-of-the-art
-        CCTV devices, thorough vetting of company personnel, and more.
+        of services including:
       </Typography>
 
       <motion.div

@@ -53,7 +53,10 @@ export const Gallery = () => {
           >
             Gallery
           </Typography>
-          <Typography textAlign="center" style={{ maxWidth: "500px" }}>
+          <Typography
+            textAlign="center"
+            style={{ maxWidth: "500px", padding: "20px" }}
+          >
             A snapshot of our top-tier services in manned guarding, CCTV
             installations, and personnel vetting.
           </Typography>
