@@ -1,9 +1,6 @@
 import { Stack, Grid, Typography } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import CallIcon from "@mui/icons-material/Call";
-import LinkedinIcon from "@mui/icons-material/LinkedIn";
 
 const currentYear = new Date().getFullYear();
 

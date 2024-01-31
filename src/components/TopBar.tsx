@@ -89,7 +89,7 @@ export default function TopBar() {
                   backgroundColor: "#B1120F",
                   color: "#fff",
                   width: "8rem",
-                  fontWeight: "bold",
+                  // fontWeight: "bold",
                   "&:hover": {
                     backgroundColor: "#fff",
                     color: "#000",

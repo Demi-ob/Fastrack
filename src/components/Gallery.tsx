@@ -34,7 +34,8 @@ export const Gallery = () => {
         alignItems: "center",
         paddingBottom: "3rem",
         // background: "#110a2c",
-        background: "#0c3323",
+        // background: "#0c3323",
+        background: "#b1120f",
         color: "#fff",
       }}
     >
@@ -48,7 +49,7 @@ export const Gallery = () => {
         >
           Gallery
         </Typography>
-        <Typography textAlign="center">Let our work speak for you</Typography>
+        <Typography textAlign="center">Our work and culture speak for us</Typography>
       </Box>
 
       <Grid
@@ -73,7 +74,8 @@ export const Gallery = () => {
                 sx={{
                   borderRadius: "15px",
                   overflow: "hidden",
-                  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.7)",
+                  // boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.7)",
+                  boxShadow: "0px 0px 10px #0000004f"
                 }}
               >
                 <img

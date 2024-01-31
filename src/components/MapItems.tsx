@@ -63,7 +63,7 @@ export const testimonialData: ITestimonialDataInterface[] = [
   {
     about: "",
     name: "Agbeleye Samuel",
-    review: "I love fastrack ltd, quality and reliable service.",
+    review: "Fastrack provides quality and reliable service.",
     image: "images/dolapo.webp",
     background: "rgba(0, 0, 0, 0.1)", //grey
     // color:"#000"
@@ -114,7 +114,7 @@ export const testimonialData2: ITestimonialDataInterface[] = [
 export const faqData: IFAQItem[] = [
   {
     id: 1,
-    question: "What is the Vehicle Tracking system offered by Fastrack?",
+    question: "What is the vehicle tracking system offered by Fastrack?",
     answer:
       " Fastrack provides a high-tech Fleet Management Solution that offers automatic periodic reports to the web. This includes detailed reports on vehicle function, overspeed alerts, idle time reports, trip start information, and more.",
   },

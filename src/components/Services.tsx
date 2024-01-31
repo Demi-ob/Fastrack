@@ -49,16 +49,16 @@ export const Services = () => {
           fontWeight="bold"
           fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
         >
-          What do we do
+         Our services
         </Typography>
-        <Typography
+        {/* <Typography
           variant="h2"
           fontWeight="bold"
           fontSize={{ xs: 30, sm: 35, md: 40, lg: 45, xl: 55 }}
           color="secondary"
         >
           ?
-        </Typography>
+        </Typography> */}
       </motion.div>
 
       <motion.div

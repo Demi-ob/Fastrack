@@ -47,7 +47,7 @@ export const Display = () => {
                     >
                       <Typography
                         fontWeight="bold"
-                        color="primary"
+                        // color="primary"
                         fontSize={{ xs: 25, sm: 30, md: 35, lg: 40, xl: 45 }}
                         lineHeight={1}
                         style={{textAlign: item.id % 2 === 0 ? "right": "left"}}

@@ -26,50 +26,51 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ["Space Grotesk, sans-serif", "Russo One, sans-serif"].join(
-      ","
-    ),
+    // fontFamily: ["Space Grotesk, sans-serif", "Russo One, sans-serif"].join(
+    //   ","
+    // ),
+    fontFamily: ["Poppins, sans-serif"].join(","),
     button: {
       textTransform: "none",
-      borderRadius: '50%'
+      borderRadius: "50%",
     },
-    h1:{
-      fontFamily: "DM Sans, sans-serif"
+    h1: {
+      fontFamily: "Poppins, DM Sans, sans-serif",
     },
-    h2:{
-      fontFamily: "DM Sans, sans-serif"
+    h2: {
+      fontFamily: "Poppins, DM Sans, sans-serif",
     },
-    h3:{
-      fontFamily: "DM Sans, sans-serif"
-    }
+    h3: {
+      fontFamily: "Poppins, DM Sans, sans-serif",
+    },
   },
 });
 
 const HomePage = () => {
   return (
     <ThemeProvider theme={theme}>
-    <div
-      style={{
-        backgroundColor: "#131313",
-        color: "#fff",
-      }}
-    >
-      <TopBar />
-      <Hero />
-      {/* <Clients /> */}
-      {/* <FeatureGrid/> */}
-      <Services />
-      <Display />
-      <Gallery />
-      <Testimonials />
-      <TestimonialsSecond />
-      <Faq />
-      <Map />
-      <Contact />
-      <Footer />
-    </div>
-  </ThemeProvider>
-  )
-}
+      <div
+        style={{
+          backgroundColor: "#131313",
+          color: "#fff",
+        }}
+      >
+        <TopBar />
+        <Hero />
+        {/* <Clients /> */}
+        {/* <FeatureGrid/> */}
+        <Services />
+        <Display />
+        <Gallery />
+        <Testimonials />
+        <TestimonialsSecond />
+        <Faq />
+        <Map />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
+  );
+};
 
-export default HomePage
+export default HomePage;

@@ -48,7 +48,8 @@ export default function Faq() {
                 padding: "1rem",
                 margin: "0.5rem",
                 // background: "#221164",
-                background: "#17122c",
+                // background: "#17122c",
+                background: "#121212",
                 color: "#fff",
               }}
             >
